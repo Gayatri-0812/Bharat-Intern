@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    color: white;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+
+.top-header{
+    height: 98vh;
+    background-image: url(photos/BG.jpg);
+    
+}
+.top-header,.body-section,.faq-container{
+    border-bottom: 8px solid rgb(35,35,35); ;
+}
+
+.container{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); */
+}
+
+
+
+.dropdown-container{
+    position: relative;
+}
+.btn{
+    background-color:#E50914;
+    padding: 8px 15px;
+    border: none;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius:5px;
+    cursor: pointer;
+  
+
+}
+.btn:hover{
+    background-color: rgba(229,9,20,0.8);
+}
+.language-option{
+    padding:10px 30px ;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 1px solid #535251 ;
+    border-radius: 5px;
+  
+    
+}
+.language{
+    left: 4px;
+}
+.language, .drop-down{
+    position: absolute;
+    top: 5px;
+
+}
+.drop-down{
+    right: -2px;
+    top: 6px;
+}
+.navbar{
+    margin: 0 100px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.right-half{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/*-------------------------------------------- header content --------------------------------------------------- */
+
+.content{
+    margin:20vh auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center ;
+}
+.content h1, .content p, .content h5{
+    margin-top: 38px;
+
+}
+.content h1{
+    font-size: 48px;
+    font-weight: 900;
+}
+.content p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.content h5{
+    font-size: 24px;
+    font-weight: 400;
+}
+.email-container{
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    margin-top: 20px;
+    
+}
+
+.email-container > input{
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #535251;
+    padding: 0 10px;
+    border-radius: 5px;
+    
+}
+.get-started-btn{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin: 0px,0px,0px,8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.get-started-btn > span{
+    font-size: 30px;
+
+}
+
+/*----------------------------------- bodyyyy section------------------------------------------- */
+.body-section{
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    margin: 0px, 32px;
+}
+.right-item{
+    position: relative;
+
+}
+.right-item > video{
+    position: absolute;
+    left: 80px;
+    top: 20%;
+    z-index: -1;
+
+}
+.left-item h2, .right-item h2{
+    font-size:48px ;
+    font-weight:900;
+    margin-bottom:20px;
+}
+.left-item p, .right-item p{
+    font-size: 24px ;
+    font-weight: 400;
+    margin: 16px, 0px,0px;
+}
+.layout{
+    border: 2px solid #535251 ;
+    border-radius:10px ;
+    background-color: black;
+   position: absolute;
+   bottom: 0;
+   left: 25%;
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   padding: 8px 12px;
+
+}
+.layout p{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.layout P span{
+    color: #0071eb;
+    font-size: 14px;
+    font-weight: 400;
+}
+.layout img{
+    width: 50px;
+}
+.static-left-item{
+    position: relative;
+}
+.layout b{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.faq-container{
+    padding: 40px 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-container > h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.faq {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    padding: 24px;
+    font-size: 24px;
+    background-color:  #2D2D2D ; 
+    transition-duration: 0.5s;
+}
+.faq > p, .faq > span{
+    font-size: 24px;
+}
+.faq:hover{
+    background-color: #484747;
+    
+}
+
+.faq-container > p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+/* ------------------------------------------------footer------------------------------------------------------------- */
+
+.footer-container, .footer-container a{
+    color: #AFAFAF;
+}
+.footer-container{
+    padding: 100px;
+    margin-left: 100px;
+}
+
+footer > p{
+    font-size: 16px;
+
+}
+
+.link-container{
+    display: flex;
+    gap: 400px;
+    justify-content: flex-start;
+    padding: 40px 0px;
+   
+
+}
+.link-item{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+
+}
